@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{teamName}}</title>
+</head>
+{% extends 'index.html' %}
+{% block body %}
+    <div>
+        <table>
+            <tbody>
+                {% for url in urls %}
+                <tr>
+                    <td><a href="{{url[2]}}">{{url[1]}}</a></td>
+                    <td>
+                        <form action="", method="post">
+                            <input style="display: none;" value="{{url[0]}}" name="URL_id">
+                            <button class="button"><i class="fa fa-trash-o"></i></button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <form action="{{teamID}}/add">
+            <button class="plusButton"><i class="fa fa-plus"></i></button>
+        </form>
+    </div>
+{% endblock %}
+</html>

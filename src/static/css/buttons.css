@@ -1,0 +1,30 @@
+.button{
+    background-color: #e0000000;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    border: 2px solid #E00000;
+    border-radius: 5px;
+    margin: 1px 0px 5px 50px;
+    color: #fff;
+}
+
+.plusButton{
+    background-color: #e0000000;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin: auto;
+    border: 2px solid #E00000;
+    border-radius: 5px;
+    color: #fff;
+    padding: 2px;
+    margin-top: 20px;
+}
+
+.fa{
+    padding: 1px 10px 1px 10px;
+}
+
+.backButton{
+    position: absolute;
+    margin-right: 500px;
+}

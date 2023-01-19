@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+</head>
+{% extends 'index.html' %}
+{% block body %}
+
+    {% if blockToShow == 'Erro' %}
+    <div><h2 class="errorAlerts"> URL não cadastrado. </h2></div>
+    {% endif %}
+
+    <div>
+        <form action="/edit/links/{{teamID}}/add", method="post">
+            <label for="url">Titulo da URL:</label>
+                <input type="text" name="titulo" required>
+            <label for="url">URL:</label>
+                <input type="url" name="url" placeholder="https://exemplo.com.br" required>
+            <input class="button" type="submit" value="Salvar">
+        </form>
+    </div>
+{% endblock %}
+</html>

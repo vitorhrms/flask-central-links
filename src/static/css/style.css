@@ -1,0 +1,136 @@
+body{
+    background-color: #252525;
+    height: 60vh;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    height: 100%;
+    
+}
+
+label{
+    font-family: Lato, sans-serif;
+    color: white;
+    margin-left: 30px;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+li {
+    padding: 6px 0;
+    display: flex;
+}
+
+li a {
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font-family: Lato, sans-serif;
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+li a::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ff0000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+li a:hover {
+    color: #ff3939;
+}
+
+li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.buttonsIndex{
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.buttonsIndex a img{
+    height: 80px;
+}
+
+
+.errorAlerts{
+    position: absolute;
+    margin: -150px 200px -150px 200px;
+    color: #ff3939;
+}
+
+tbody{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 300px;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+td {
+    padding: 6px 0;
+    display: flex;
+}
+
+td a {
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font-family: Lato, sans-serif;
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+td a::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ff0000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+td a:hover {
+    color: #ff3939;
+}
+
+td a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
