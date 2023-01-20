@@ -8,9 +8,11 @@
 </head>
 {% extends 'index.html' %}
 {% block body %}
-    <form class="backButton" action="/">
-        <button><i class="fa-solid fa-chevron-left"></i></button>
-    </form>
+    <div class="backButton">
+        <form action="/">
+            <button> < </button>
+        </form>
+    </div>
     <ul>
         {% for team in allTeams %}
         <li><a href="{{url_for('view.getViewTeam', teamID=team[0])}}">{{team[1]}}</a></li>

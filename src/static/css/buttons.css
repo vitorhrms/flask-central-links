@@ -24,7 +24,24 @@
     padding: 1px 10px 1px 10px;
 }
 
+.buttonsIndex{
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.buttonsIndex a img{
+    height: 80px;
+}
+
 .backButton{
     position: absolute;
-    margin-right: 500px;
+    bottom: 5vh;
+    left: 5vw;
+}
+.backButton button{
+    font-size: larger;
+    border: solid;
+    border-radius: 5px;
+    border-color: rgb(61, 61, 61);
+    color: #000000;
+    background-color: rgb(61, 61, 61);
 }

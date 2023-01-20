@@ -12,13 +12,17 @@
     {% if blockToShow == 'Erro' %}
     <div><h2 class="errorAlerts"> URL não cadastrado. </h2></div>
     {% endif %}
-
+    <div class="backButton">
+        <form action="/edit/links/{{teamID}}">
+            <button> < </button>
+        </form>
+    </div>
     <div>
         <form action="/edit/links/{{teamID}}/add", method="post">
             <label for="url">Titulo da URL:</label>
-                <input type="text" name="titulo" required>
+                <input class="inputForm" type="text" name="titulo" required>
             <label for="url">URL:</label>
-                <input type="url" name="url" placeholder="https://exemplo.com.br" required>
+                <input class="inputForm" type="url" name="url" placeholder="https://exemplo.com.br" required>
             <input class="button" type="submit" value="Salvar">
         </form>
     </div>

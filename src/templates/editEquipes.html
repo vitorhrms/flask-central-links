@@ -8,10 +8,21 @@
 </head>
 {% extends 'index.html' %}
 {% block body %}
-    <ul>
-        {% for team in allTeams %}
-        <li><a href="{{url_for('edit.editLinks', teamID=team[0])}}">{{team[1]}}</a></li>
-        {% endfor %}
-    </ul>
+    <div class="backButton">
+        <form action="/">
+            <button> < </button>
+        </form>
+    </div>
+    <div>
+        <table>
+            <tbody>
+                {% for team in allTeams %}
+                    <tr>
+                        <td><a href="{{url_for('edit.editLinks', teamID=team[0])}}">{{team[1]}}</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 {% endblock %}
 </html>
