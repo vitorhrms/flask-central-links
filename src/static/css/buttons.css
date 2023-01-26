@@ -4,7 +4,7 @@
     letter-spacing: 0.03em;
     border: 2px solid #E00000;
     border-radius: 5px;
-    margin: 1px 0px 5px 50px;
+    margin: 1px 0px 5px 40px;
     color: #fff;
 }
 
@@ -34,14 +34,19 @@
 
 .backButton{
     position: absolute;
-    bottom: 5vh;
-    left: 5vw;
+    top: 28vh;
+    left: 25vw;
 }
 .backButton button{
-    font-size: larger;
-    border: solid;
+    border: 2px solid #E00000;
     border-radius: 5px;
-    border-color: rgb(61, 61, 61);
-    color: #000000;
-    background-color: rgb(61, 61, 61);
+    background-color: rgba(61, 61, 61, 0);
+}
+.backButton button img{
+    width: 20px;
+    margin: -2px 0 -5px 0;
+}
+
+.infoButton{
+    margin-bottom: -8px;
 }

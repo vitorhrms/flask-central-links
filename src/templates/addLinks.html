@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover({
+                placement : 'bottom',
+                trigger : 'hover',
+                html: true
+            });
+        });
+    </script>
     <title>Add</title>
 </head>
 {% extends 'index.html' %}
 {% block body %}
+    <p class="titleName">{{teamName}}</p>
 
     {% if blockToShow == 'Erro' %}
     <div><h2 class="errorAlerts"> URL não cadastrado. </h2></div>
     {% endif %}
     <div class="backButton">
         <form action="/edit/links/{{teamID}}">
-            <button> < </button>
+            <button> <img src="/static/img/icons8-left-24.png" alt="go-back"> </button>
         </form>
     </div>
     <div>
         <form action="/edit/links/{{teamID}}/add", method="post">
             <label for="url">Titulo da URL:</label>
-                <input class="inputForm" type="text" name="titulo" required>
+                <input class="inputForm" type="text" name="titulo" placeholder="Título exemplo" required>
             <label for="url">URL:</label>
                 <input class="inputForm" type="url" name="url" placeholder="https://exemplo.com.br" required>
-            <input class="button" type="submit" value="Salvar">
+                <img class="infoButton" src="/static/img/icons8-info-24.png" alt="info-button" data-toggle="popover" title="" data-content=" Necessário http:// ou https:// antes da URL.">
+                <input class="button" type="submit" value="Salvar">
         </form>
     </div>
 {% endblock %}

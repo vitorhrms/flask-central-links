@@ -1,8 +1,12 @@
 body{
     background-color: #252525;
     height: 60vh;
+    margin: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+.warningImg{
+    width: 15px;
+}
 .body {
     display: flex;
     justify-content: center;
@@ -13,11 +17,22 @@ body{
     height: 100%;
     
 }
+.titleName{
+    position: absolute;
+    top: 26vh;
+    color: #ecf0f1;
+    font-size: 25px;
+    margin: 10px;
+}
+img{
+    vertical-align: baseline !important;
+}
 
 label{
     font-family: Lato, sans-serif;
     color: white;
     margin-left: 30px;
+    font-size: 17px;
 }
 
 
@@ -128,6 +143,16 @@ td a:hover::after {
     transform-origin: left;
 }
 
+input{
+    font: caption;
+    line-height: normal;
+    
+}
+button{
+    line-height: normal;
+    cursor: pointer;
+}
+
 .inputForm{
     background-color: #fff;
     padding: 3px 7px;
@@ -139,4 +164,13 @@ td a:hover::after {
     outline: 0;
     color: #111;
     font-size: 13px;
+}
+
+.popover-content{
+    font-weight: bold;
+    font-style: italic;
+    background-color: #fdf386;
+}
+.popover.bottom>.arrow:after{
+    border-bottom-color: #fdf386;
 }
