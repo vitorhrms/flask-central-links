@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from src.controllers.getters import getTeamNameByID, getUrlsByID
-from src.controllers.setters import addUrl, deleteTeamByID
+from src.controllers.setters import addUrl, deleteUrlByID
 
 editRoutes = Blueprint('edit', __name__, url_prefix='/edit')
 
@@ -13,8 +13,7 @@ def edit():
 def editLinks(teamID):
     if request.method == "POST":
         URL_id = request.form['URL_id']
-        deleteTeamByID(URL_id)
-    
+        deleteUrlByID(URL_id)
     teamName = getTeamNameByID(teamID)
     urls = getUrlsByID(teamID)
 

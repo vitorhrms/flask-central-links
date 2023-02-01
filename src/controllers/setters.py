@@ -17,7 +17,7 @@ def addUrl(URL_name:str, URL_link:str, team_id:int) -> bool:
         print("Erro ao adicionar URL")
         return False
 
-def deleteTeamByID(URL_id):
+def deleteUrlByID(URL_id):
     try:
         query = '''delete from URLs 
                 where URL_id = {}
