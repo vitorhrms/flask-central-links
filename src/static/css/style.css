@@ -23,6 +23,7 @@ body{
     color: #ecf0f1;
     font-size: 25px;
     margin: 10px;
+    filter: drop-shadow(3px 3px 15px black);
 }
 img{
     vertical-align: baseline !important;
@@ -33,6 +34,7 @@ label{
     color: white;
     margin-left: 30px;
     font-size: 17px;
+    cursor: auto;
 }
 
 
@@ -42,6 +44,7 @@ ul {
     align-items: start;
     list-style-type: none;
     margin-left: -40px;
+    filter: drop-shadow(3px 3px 15px black);
 }
 
 li {
@@ -103,6 +106,7 @@ tr {
     justify-content: space-between;
     margin-right: 50px;
     margin-left: 50px;
+    filter: drop-shadow(3px 3px 15px black);
 }
 
 td {

@@ -30,6 +30,7 @@
 }
 .buttonsIndex a img{
     height: 80px;
+    filter: drop-shadow(3px 3px 15px black);
 }
 
 .backButton{
@@ -49,4 +50,5 @@
 
 .infoButton{
     margin-bottom: -8px;
+    filter: drop-shadow(3px 3px 15px black);
 }
